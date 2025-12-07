@@ -1,0 +1,83 @@
+:root {
+    --primary-color: #2c3e50;
+    --accent-color: #d4a59a; /* A soft rose gold for "Rami" */
+    --bg-color: #fdfbf7;
+    --text-color: #333;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.container {
+    max-width: 600px;
+    padding: 20px;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    letter-spacing: -1px;
+}
+
+.subtitle {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #888;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    border: 1px solid #eee;
+}
+
+.welcome-text {
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.btn {
+    display: inline-block;
+    margin: 10px 5px;
+    padding: 12px 25px;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.btn:hover {
+    background-color: var(--accent-color);
+}
+
+footer {
+    margin-top: 50px;
+    font-size: 0.75rem;
+    color: #aaa;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 600px) {
+    h1 { font-size: 3rem; }
+    .card { padding: 20px; }
+}
